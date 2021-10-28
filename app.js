@@ -17,7 +17,7 @@ app.use(
 );
 
 app.set("view engine", "ejs");
-app.use("/", express.static("images"));
+app.use("/", express.static("assets"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
   
 app.get((req, res) => {
-    res.status(4040).send("404", { title: "404" });
+    res.status(4040).render("404", { title: "404" });
   });
 
 const start = async () => {
