@@ -18360,3 +18360,8 @@ dl li {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*author adjustments*/
+.signin-signup-btn {
+  padding-top: -5px;
+}

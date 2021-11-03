@@ -4,6 +4,7 @@
   "description": "trinity diner restaurant online ordering admin",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.24.0",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
     "chartist": "^0.11.2",
