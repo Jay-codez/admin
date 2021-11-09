@@ -1,7 +1,7 @@
 <%- include("./partials/head.ejs") %>
 <div class="container-scroller">
   <!-- partial:../../partials/_navbar.html -->
-
+  <%- include("./partials/nav.ejs") %>
   <!-- partial -->
   <div class="container-fluid page-body-wrapper">
     <!-- partial:../../partials/_sidebar.html -->
@@ -32,7 +32,7 @@
                   name="contact-form"
                 >
                   <div class="row">
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
                       <div class="single-input-wrap">
                         <label for="name">Item Name:</label>
                         <input
@@ -59,18 +59,19 @@
                       <div class="single-input-wrap">
                         <label for="description">Description:</label>
                         <textarea
-                          class="form-control"
                           name="description"
-                        >
-                          
-                       </textarea
-                        >
+                          type="text"
+                          class="form-control"
+                          id="exampleTextarea1"
+                          rows="4"
+                        ></textarea>
                       </div>
                     </div>
                   </div>
-                  <div class="signin-signup-btn">
-                    <button type="submit" class="btn btn-base">Submit</button>
-                  </div>
+                  <button type="submit" class="btn btn-primary mr-2">
+                    Submit
+                  </button>
+                  <button class="btn btn-light">Cancel</button>
                 </form>
               </div>
             </div>

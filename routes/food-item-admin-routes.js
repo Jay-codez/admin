@@ -11,7 +11,12 @@ router.post("/add-food-item", async (req, res) => {
 
     const data = await addFoodIem(req,res);
 
-    res.redirect("/add-food-item")
+    if(data){
+      res.redirect("/add-food-item")
+    }else{
+      res.redirect("/add-food-item")
+    }
+
 });
 
 

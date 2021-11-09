@@ -8,16 +8,10 @@ const addFoodIem = async (req,res) => {
 
     const body = req.body;
 
-    console.log(body)
+    const results = await axios.post(`${baseUrl}/api/new`,body);
 
-    const results = await axios.post("/api/new",body);
-
-    console.log(results.response)
-
-    return results.response;
+    return results;
 }
-
-
 
 
 module.exports = {
