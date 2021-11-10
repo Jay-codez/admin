@@ -37,7 +37,6 @@
                         <label for="name">Item Name:</label>
                         <input
                           type="text"
-                          id="name"
                           class="form-control"
                           name="name"
                           required
@@ -52,6 +51,65 @@
                           class="form-control"
                           name="price"
                           required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="single-input-wrap">
+                        <label for="category">Category:</label>
+                        <select class="form-control">
+                          <option disabled selected value>
+                            -- Select an option --
+                          </option>
+                          <option
+                            value="rice"
+                            type="text"
+                            class="form-control"
+                            name="category"
+                            required
+                          >
+                            Rice
+                          </option>
+                          <option
+                            value="meat"
+                            type="text"
+                            class="form-control"
+                            name="category"
+                            required
+                          >
+                            Meats
+                          </option>
+                          <option
+                            value="home-delights"
+                            type="text"
+                            class="form-control"
+                            name="category"
+                            required
+                          >
+                            Home Delights
+                          </option>
+                          <option
+                            value="drinks"
+                            type="text"
+                            class="form-control"
+                            name="category"
+                            required
+                          >
+                            Drinks
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="single-input-wrap">
+                        <label for="fileupload">Image:</label>
+                        <input
+                          name="fileupload"
+                          type="file"
+                          class="form-control"
+                          value="fileupload"
+                          id="fileupload"
                         />
                       </div>
                     </div>
